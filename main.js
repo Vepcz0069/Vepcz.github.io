@@ -1,0 +1,1 @@
+function copy(text){var input=document.createElement("input");input.value=text;input.select();input.setSelectionRange(0,99999);navigator.clipboard.writeText(input.value);input.remove();var x=document.getElementById("toast");x.className="show";setTimeout(function(){x.className=x.className.replace("show","");},5200);}
